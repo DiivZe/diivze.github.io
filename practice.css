@@ -1,0 +1,95 @@
+.img2 {
+    width: 240px;
+    border: 1px solid #dedede;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+.favgames {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+}
+.imgtext {
+    font-style: bold;
+}
+
+.h3annet {
+    background: linear-gradient(to right, rgba(26, 46, 89, 1) 0%, rgba(54, 85, 151, 1) 100%);
+    color: white;
+    font-size: 18px;
+    border: 2px solid #D8AA2A;
+    text-shadow: 1px 1px 4px #000000;
+    max-width: 810px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px 0px 4px 0px;
+}
+
+#gametable {
+    box-sizing: border-box;
+    max-width: 810px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#gametable tbody tr th {
+    padding: 4px 8px;
+    border: 1px solid #dedede;
+}
+
+#gametable tbody tr td {
+    border: 1px solid #dedede;
+    padding: 4px 8px;
+}
+
+#gametalbetopbar {
+    background-color: #F1F5FB;
+}
+
+.rowspan {
+    text-align: center;
+    width: 25%;
+    color: #0066c0;
+}
+
+.gamerating {
+    background-color: #e8fffe;
+    height: 30px;
+    overflow: hidden;
+    font-family: RetroMode;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.ratingreason {
+    text-align: left;
+}
+
+#mplaylist {
+    box-sizing: border-box;
+    max-width: 810px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#mplaylist tbody tr th {
+    padding: 8px 8px;
+
+}
+
+#mplaylist tbody tr td {
+    padding: 8px 8px;
+}
