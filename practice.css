@@ -1,7 +1,28 @@
+body {
+    font: normal 16px 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-image: url("images/Background.png");
+    background-size: var(--backgroundSize);
+    animation: mvbg 5s linear infinite;
+}
+
+@keyframes mvbg {
+    from { background-position: 0 0;}
+    to {background-position: var(--backgroundSize) var(--backgroundSize);}
+}
+
 .img2 {
-    width: 240px;
+    width: 15rem;
     border: 1px solid #dedede;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    transition: .5s;
+    cursor: pointer;
+    mask: linear-gradient(135deg,#000c 40%,#000,#000c 60%) 100% 100%/250% 250%;
+}
+
+img:hover {
+    mask-position: 0 0;
 }
 
 .favgames {
@@ -9,10 +30,10 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    max-width: 810px;
+    max-width: 51rem;
     margin-left: auto;
     margin-right: auto;
-    gap: 40px;
+    gap: 2.5rem;
 }
 .imgtext {
     font-style: bold;
@@ -66,7 +87,7 @@
     background-color: #e8fffe;
     height: 30px;
     overflow: hidden;
-    font-family: RetroMode;
+    font-family: RetroMode, sans-serif;
     font-size: 20px;
     text-shadow: 1px 1px 1px #000000;
 }
@@ -92,4 +113,144 @@
 
 #mplaylist tbody tr td {
     padding: 8px 8px;
+}
+
+.rainbow1 { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 810px;
+    gap: 5px;
+}
+
+.backgroundR {
+    background-color: #dedede;
+    width: 400px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.foregroundR {
+    animation-name: Rforgroundanim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: linear-gradient(270deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(0, 0, 255, 1) 100%);
+    width: 40px;
+    height: 8px;
+    background-size: 400% 400%;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 1px;
+    margin-right: 20px;
+}
+
+.backgroundL {
+    background-color: #dedede;
+    width: 400px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.foregroundL {
+    animation-name: Lforgroundanim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: linear-gradient(90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgb(0, 0, 255, 1) 100%);
+    width: 40px;
+    height: 8px;
+    background-size: 400% 400%;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 1px;
+}
+
+@keyframes Lforgroundanim {
+    0% {left: calc(0%); background-position: 0% 0%;}
+    50% {left: calc(100% - 40px); background-position: 100% 0%;}
+    100% {left: calc(0%); background-position: 0% 0%;}
+}
+
+@keyframes Rforgroundanim {
+    0% {left: calc(100% - 40px); background-position: 100% 0%;}
+    50% {left: calc(0%); background-position: 0% 0%;}
+    100% {left: calc(100% - 40px); background-position: 100% 0%;}
+}
+
+.rainbow2 { 
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 810px;
+    gap: 40px;
+}
+
+.background1 {
+    background-color: #dedede;
+    width: 10px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.foreground0, .foreground1, .foreground2, .foreground3, .foreground4, .foreground5, .foreground6, .foreground7, .foreground8, .foreground9 {
+    animation-name: upanddown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: linear-gradient(180deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%);
+    width: 8px;
+    height: 40px;
+    background-size: 400% 400%;
+    position: relative;
+    border-radius: 5px;
+    margin-left: 1px;
+}
+
+@keyframes upanddown {
+    0% {top:0%; background-position: 0% 0%;}
+    50% {top: calc(100% - 40px); background-position: 0% 100%;}
+    100% {top:0%; background-position: 0% 0%;}
+}
+
+.foreground4, .foreground6 {
+    animation-delay: 0.1s;
+}
+
+.foreground9, .foreground3 {
+    animation-delay: 0.5s;
+}
+
+.foreground5, .foreground1 {
+    animation-delay: 0.9s;
+}
+
+.foreground2, .foreground7 {
+    animation-delay: 1.3s;
+}
+
+.foreground8, .foreground0 {
+    animation-delay: 1.7s;
 }

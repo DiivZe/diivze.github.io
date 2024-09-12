@@ -47,6 +47,7 @@ body {
     display: flex!important;
     border-bottom: 1px solid #dedede;
     padding: 0px; /* default padding is wierd */
+    z-index: 1;
 }
 
 #pcnav ul li:first-child {
