@@ -29,7 +29,7 @@ header {
 body {
     font: normal 16px 'Segoe UI', Tahoma, Verdana, sans-serif;
     background-image: url("images/bg.gif");
-    background-attachment: fixed;
+    background-attachment: scroll;
     color: black;
 }
 
